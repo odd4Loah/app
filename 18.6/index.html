@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18.6</title>
+</head>
+<body>
+<div id="app">
+    <!--<label>-->
+        <!--男-->
+        <!--<input v-model="sex" value="male" type="checkbox">-->
+    <!--</label>-->
+    <!--<label>-->
+        <!--女-->
+        <!--<input v-model="sex" value="female" type="checkbox">-->
+    <!--</label>-->
+    <!--<br>-->
+    <!--{{sex}}-->
+
+    <!--<textarea v-model="article"></textarea>-->
+    <div>你来自哪里？</div>
+    <select v-model="from">
+        <option value="1">五星一队</option>
+        <option value="2">沈北新区</option>
+        <option value="3">叶柏寿</option>
+    </select>
+    {{from}}
+
+
+    <div>你要去哪里？</div>
+    <select v-model="dest" multiple>
+        <option value="1">五星一队</option>
+        <option value="2">沈北新区</option>
+        <option value="3">叶柏寿</option>
+    </select>
+    {{dest}}
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="../libs/vue.js"></script>
+</body>
+</html>

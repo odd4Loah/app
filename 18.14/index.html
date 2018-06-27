@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18.14</title>
+</head>
+<body>
+<div id="app">
+    <div>
+        <input v-model="length"> mm
+        <br>
+        {{length | meter}}
+    </div>
+    <hr>
+    <input v-model="price">
+    {{price | currency('USD')}}
+
+</div>
+
+<script src="../libs/vue.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
